@@ -1,0 +1,19 @@
+2026-11-12 10:00:00 INFO migration-api: Migration request received id=1001
+2026-11-12 10:00:01 INFO migration-api: Database connection established pool=12
+2026-11-12 10:00:03 INFO migration-worker: Starting batch processing batch=1
+2026-11-12 10:00:05 INFO migration-worker: Processed record count=100
+2026-11-12 10:00:08 WARN migration-api: Database query latency 850ms
+2026-11-12 10:00:10 WARN migration-api: Database query latency 1400ms
+2026-11-12 10:00:12 WARN migration-api: Database query latency 2100ms
+2026-11-12 10:00:14 ERROR migration-api: Database connection timeout after 3000ms
+2026-11-12 10:00:15 ERROR migration-worker: Failed to acquire database connection
+2026-11-12 10:00:16 ERROR migration-worker: Migration batch failed batch=2
+2026-11-12 10:00:17 ERROR migration-worker: Retry attempt failed due to connection timeout
+2026-11-12 10:00:18 ERROR migration-api: Database connection timeout after 3000ms
+2026-11-12 10:00:19 ERROR migration-worker: Failed to acquire database connection
+2026-11-12 10:00:20 WARN migration-api: Request latency exceeded threshold
+2026-11-12 10:00:21 ERROR migration-worker: Migration batch failed batch=3
+2026-11-12 10:00:22 INFO migration-api: Health check completed
+2026-11-12 10:00:23 INFO auth-service: User token validated
+2026-11-12 10:00:24 INFO auth-service: Request authorized
+2026-11-12 10:00:25 INFO migration-worker: Batch processing resumed
